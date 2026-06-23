@@ -679,6 +679,56 @@
       }
     }
 
+  
+    /* v4: 모든 버튼/CTA 텍스트 중앙 정렬 고정 */
+    button,
+    a.btn,
+    .btn,
+    .mini-btn,
+    .bottom-nav a,
+    .bottom-nav button,
+    .lightbox-caption button {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+      line-height: 1.22 !important;
+      vertical-align: middle;
+    }
+
+    .bottom-nav a,
+    .bottom-nav button {
+      display: flex !important;
+      flex: 1 1 0 !important;
+      min-width: 0 !important;
+      padding: 0 10px !important;
+      white-space: nowrap !important;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      place-items: center;
+    }
+
+    .bottom-nav {
+      align-items: center !important;
+    }
+
+    .hero-cta .btn,
+    .sns-card .btn,
+    .top-actions .mini-btn {
+      white-space: normal;
+      word-break: keep-all;
+    }
+
+    .btn > *,
+    .mini-btn > *,
+    .bottom-nav a > *,
+    .bottom-nav button > * {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
   </style>
 </head>
 <body>
